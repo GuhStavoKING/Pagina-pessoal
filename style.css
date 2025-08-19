@@ -1,0 +1,129 @@
+/* Importa a fonte 'Lato' do Google Fonts para uma estética limpa e profissional */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* Estilos globais para a página */
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    /* Centraliza o conteúdo principal na página */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para a imagem de perfil */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Adiciona um efeito de brilho na borda e na sombra */
+    border: 5px solid #ff4500; 
+    box-shadow: 0 0 25px #ff4500, inset 0 0 15px #ff4500;
+    margin-bottom: 2em;
+}
+
+/* Contêiner principal, com um fundo levemente mais claro */
+.main {
+    width: 90%; 
+    max-width: 350px;
+    padding: 2.5em;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Efeito ao passar o mouse sobre o contêiner principal */
+.main:hover {
+    transform: translateY(-5px);
+    /* Melhora o efeito de brilho e elevação no hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 69, 0, 0.6);
+}
+
+/* Estilo para o nome */
+h2 {
+    color: #ff4500;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para o subtítulo */
+h4 {
+    color: #b3b3b3;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+    letter-spacing: 1px;
+}
+
+/* Estilo para o contêiner da descrição */
+.descrição {
+    border-top: 1px solid #333;
+    padding-top: 1.5em;
+}
+
+/* Estilo para o parágrafo da mensagem */
+.descrição p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Estilo para o rodapé */
+footer {
+    margin-top: 2em;
+    padding: 1em 0; /* Adiciona preenchimento interno */
+    border-top: 1px solid #333;
+    font-size: 0.8em;
+    color: #888;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo para o iframe do mapa */
+.map-frame {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de escala ao passar o mouse no mapa */
+.map-frame:hover {
+    transform: scale(1.05);
+}
+
+
+/* Media Queries para ajustar o layout em telas menores */
+@media (max-width: 450px) {
+    .main {
+        padding: 1.5em;
+    }
+    
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        font-size: 0.9em;
+    }
+}
